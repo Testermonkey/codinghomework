@@ -6,7 +6,8 @@
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-
+    <audio id="sound1" src="http://soundbible.com/grab.php?id=1975&type=mp3"></audio>
+    <button onclick="document.getElementById('sound1').play()">w</button>
     <!--edit modal-->
     <!--Modal-->
     <div class="modal fade" id="modalEdit">
@@ -38,31 +39,62 @@
     <!--End Modal-->
     <!--end edit modal-->
     <!--form-->
-    <form>
-        <select id="selectAutoMake">
-            <option value="Ford">Ford</option>
-            <option value="Chevy">Chevy</option>
-            <option value="Toyota">Toyota</option>
-        </select>
-        <input id="inputAutoModel" name="inputAutoModel" placeholder="Model">
-        <input id="inputAutoColor" name="inputAutoColor" placeholder="Color" />
-        <input id="inputAutoYear" name="inputAutoYear" placeholder="Year" />
-        <input id="inputButton" type="button" name="inputButton" value="Add" />
-    </form>
 
+    <div class="container">
+        <h2>Enter new inventory</h2>
+        <form role="form">
+            <div class="form-group">
+                <select class="form-control" id="selectAutoMake">
+                    <option value="Ford">Ford</option>
+                    <option value="Chevy">Chevy</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Dodge">Dodge</option>
+                </select>
+            </div>
+            <input id="inputAutoModel" name="inputAutoModel" placeholder="Model">
+            <input id="inputAutoColor" name="inputAutoColor" placeholder="Color" />
+            <input id="inputAutoYear" name="inputAutoYear" placeholder="Year" />
+            <input id="inputButton" type="button" name="inputButton" value="Add" />
+    </div>
+    </form>
+    </div>
+
+    <!--<div class="container">
+        <h2>Form control: input</h2>
+        <p>The form below contains two input elements; one of type text and one of type password:</p>
+        <form role="form">
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+        </form>
+    </div>-->
     <!--end form-->
     <!--table-->
-    <table id="tableDisplayInventory">
-        <thead>
-            <tr>
-                <th>Make</th>
-                <th>Model</th>
-                <th>Color</th>
-                <th>Year</th>
-            </tr>
-        </thead>
-        <tbody id="tbodyDisplayInventory"></tbody>
-    </table>
+    <div class="container">
+        <h2>Automobile Inventory</h2>
+        <p>The Place holder text say something cool</p>
+        <table class="table table-bordered" id="tableDisplayInventory">
+
+            <!--<table id="tableDisplayInventory">-->
+            <thead>
+                <tr>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Color</th>
+                    <th>Year</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyDisplayInventory"></tbody>
+        </table>
+
+
+    </div>
 
     <!--end table-->
 

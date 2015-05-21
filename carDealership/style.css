@@ -1,2 +1,20 @@
 ﻿body {
+    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiqmP1XQzj7ECL6HBDZIv-lmGtm9Lm6jyHjSK6a2YIHsaSu3J5Fw);
+    /*background-position: center center;*/
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    background-position: 50% 0;
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }

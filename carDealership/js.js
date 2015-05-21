@@ -47,6 +47,9 @@ function create() {
                                                    <input type="button" value="Edit" onclick="showModal(' + auto.id + ')" />\
                                                    </td></tr>');
 
+
+
+
 }
 
 //display function
@@ -57,7 +60,6 @@ function removeTableRow(key) {
     //soft delete retains the records  but removes the ablitlity to display the record for certains users
     storage[key].isDeleted = true;
     $("#tableRow" + key).remove();
-
 }
 
 //show edit modal function
