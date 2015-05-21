@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!--edit modal-->
+    <!--Modal-->
+    <div class="modal fade" id="modalEdit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Editing</h4>
+                </div>
+                <div class="modal-body">
+                    <form name="form-modal">
+                        <select id="editAutoMake">
+                            <option value="Ford">Ford</option>
+                            <option value="Chevy">Chevy</option>
+                            <option value="Toyota">Toyota</option>
+                        </select>
+                        <input id="editAutoModel" name="editAutoModel" placeholder="Model">
+                        <input id="editAutoColor" name="editAutoColor" placeholder="Color" />
+                        <input id="editAutoYear" name="editAutoYear" placeholder="Year" />
+                        <input id="editButton" type="button" name="editButton" value="Save" />
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cb-clean-buff-top " data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!--End Modal-->
+    <!--end edit modal-->
+    <!--form-->
+    <form>
+        <select id="selectAutoMake">
+            <option value="Ford">Ford</option>
+            <option value="Chevy">Chevy</option>
+            <option value="Toyota">Toyota</option>
+        </select>
+        <input id="inputAutoModel" name="inputAutoModel" placeholder="Model">
+        <input id="inputAutoColor" name="inputAutoColor" placeholder="Color" />
+        <input id="inputAutoYear" name="inputAutoYear" placeholder="Year" />
+        <input id="inputButton" type="button" name="inputButton" value="Add" />
+    </form>
+
+    <!--end form-->
+    <!--table-->
+    <table id="tableDisplayInventory">
+        <thead>
+            <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Color</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyDisplayInventory"></tbody>
+    </table>
+
+    <!--end table-->
+
+
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
